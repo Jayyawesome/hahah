@@ -50,7 +50,6 @@ def usage():
                                                                 
 def gather_host_shodan():
   api_shodan_key = "my_apikey"
-    if api_shodan_key == "":
         print(t.red('no shodan api found, please insert a valid one'))
         api_shodan_key_to_file = raw_input('\ntype here:')
         with open(path + "/api.txt", "wb") as api:
